@@ -29,9 +29,9 @@ const Commercial = () => {
   });
 
   const items = filteredData.map((item) => (
-    <div className='col-lg-8'>
+    <div className='m-3'>
 <div className='item' data-value={item.id} key={item.id}>
-      <div className='card object-fit-fill border rounded-4 h-50' style={{width:"23rem"}}>
+      <div className='card object-fit-fill border rounded-4 h-50'  >
         <img src={item.image} className='card-img-top rounded-4' alt={item.title} />
          
         <div className='card-body'>
@@ -60,13 +60,11 @@ const Commercial = () => {
             <p>  Listed On</p>
             <div className='col d-flex ' >
            
-            <p className='fw-normal'>{item.listed}</p>
+            <p className='fw-normal me-5'>{item.listed}</p>
             <div className='ms-5 '>
-            <button type="button" class="btn btn-primary  px-1 py-0">Veiw Details</button>
+            <button type="button" class="btn btn-primary  px-2 py-2">View Details</button>
             </div>
-            
             </div>
-
           </div>
         </div>
       </div>
@@ -78,7 +76,7 @@ const Commercial = () => {
   const responsive = {
     0: { items: 1 },
     568: { items: 2 },
-    1024: { items: 3 },
+    1024: { items: 3.2},
   };
 
   return (

@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { PopularData } from './Totaldata';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faHeart,faCircleChevronRight } from '@fortawesome/free-solid-svg-icons';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -10,7 +10,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Popular = () => {
   const [filter, setFilter] = useState('All');
+
   const [likedItems, setLikedItems] = useState(PopularData.map(item => ({ ...item, liked: false })));
+
+
 
   const handleLike = (id) => {
     const newLikedItems = likedItems.map(item =>
@@ -30,9 +33,9 @@ const Popular = () => {
   });
 
   const items = filteredData.map((item) => (
-    <div className=''>
+    <div className='m-3'>
 <div className='item ' data-value={item.id} key={item.id}>
-      <div className='card object-fit-fill border rounded-4 h-50'style={{width:"23rem"}}>
+      <div className='card object-fit-fill border rounded-4 h-50'>
         <img src={item.image} className='card-img-top rounded-4' alt={item.title} />
         
         <div className='card-body'>
@@ -60,11 +63,11 @@ const Popular = () => {
                 
             </div>
             <p>  Listed On</p>
-            <div className='col d-flex ' >
-           
-            <p className='fw-normal'>{item.listed}</p>
+            <div className='col d-flex' >
+            <p className='fw-normal me-5 mb-0'>{item.listed}</p>
+          
             <div className='ms-5 '>
-            <button type="button" class="btn btn-primary  px-1 py-0">Veiw Details</button>
+            <p type="button" class="btn btn-primary mb-0 px-2  ">View Details</p>
             </div>
             
             </div>
@@ -80,7 +83,7 @@ const Popular = () => {
   const responsive = {
     0: { items: 1 },
     568: { items: 2 },
-    1024: { items: 3 },
+    1024: { items: 3.2 },
 
   };
 
@@ -116,20 +119,23 @@ const Popular = () => {
             
           </div>
           
-          {/* <div>
-          <p>s</p>
-          <FontAwesomeIcon icon={faSquareCaretRight} size="lg" style={{color: "#63E6BE",}} />
-          </div> */}
          
-          
         </div>
 
         <AliceCarousel
           mouseTracking={true}
+          // activeIndex={activeIndex}
           items={items}
           responsive={responsive}
           controlsStrategy="alternate"
           disableDotsControls={true}
+          showSlideInfo={true}
+          renderPrevButton={() => {
+            return <p className="p-4 absolute left-0 top-0"><FontAwesomeIcon icon={faCircleChevronRight} flip="horizontal" size="lg" /></p>
+          }}
+          renderNextButton={() => {
+            return <p className="p-4 absolute right-0 top-0"><FontAwesomeIcon icon={faCircleChevronRight} size="lg" /></p>
+          }}
          
         />
       </div>

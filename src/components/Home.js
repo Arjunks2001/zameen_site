@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className="container-fluid">
       <div
-        id="carouselExampleControls"
+        id="carouselExample"
         class="carousel slide"
         data-bs-ride="carousel"
       >
@@ -13,14 +13,14 @@ const Home = () => {
           <div class="carousel-item active ">
             <img
               src="https://zameensquare.com/_next/static/media/Post-Property-Banner-Mob-View.14d56817.jpg"
-              class="d-block w-100 " 
+              class="d-block w-100 home-img" 
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
-              src="https://zameensquare.com/_next/static/media/Hassel-free-mob.db0cbfa7.gif"
-              class="d-block w-100"
+              src="https://zameensquare.com/_next/static/media/Post-Property-Banner-Mob-View.14d56817.jpg"
+              class="d-block w-100 home-img"
               alt="..."
             />
           </div>
@@ -28,7 +28,7 @@ const Home = () => {
         <button
           class="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExampleControls"
+          data-bs-target="#carouselExample"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -37,7 +37,7 @@ const Home = () => {
         <button
           class="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExampleControls"
+          data-bs-target="#carouselExample"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -102,17 +102,22 @@ const Home = () => {
                     >
                       <li>
                         <a class="dropdown-item" href="#">
-                          Action
+                          Flat/Apartment
                         </a>
                       </li>
                       <li>
                         <a class="dropdown-item" href="#">
-                          Another action
+                          Residential House
                         </a>
                       </li>
                       <li>
                         <a class="dropdown-item" href="#">
-                          Something else here
+                          Plot/Land
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          Villa/Bungalow
                         </a>
                       </li>
                     </ul>
