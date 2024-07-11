@@ -35,7 +35,7 @@ const Topbar = () => {
           <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
             <li>
               <a class="dropdown-item" href="#">
-                Mysur
+                Mysuru
               </a>
             </li>
             <li>
