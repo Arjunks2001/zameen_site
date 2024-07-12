@@ -13,10 +13,12 @@ import Commercial from './components/Commercial';
 import Projects from './components/Projects';
 
 
+
 function App() {
+
   return (
    <div>
-    <Topbar/>
+    <Topbar />
     <Home/>
     <Popular/>
     <Projects/>

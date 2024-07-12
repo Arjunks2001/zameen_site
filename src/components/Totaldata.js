@@ -4,7 +4,7 @@ export const PopularData=[
    
      image:"https://s3-alpha-sig.figma.com/img/dc65/be1e/1125f6772ed4f467da95ee102e169fbe?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mtdeACLApMHED6RLNl96rNsGswSj4q5LgJCc74IdH11jprLb0G-YXwp-4pBJXODo~8y2KdKqKlMkBgPi416ZUa6ffX1xw6j-tAibOjE8r7d1m-yJwMrlVKTcIJAW3W1FL2D18oxIySdkiXr15kykADl-wedLuebprWirXLaCJkhsLcPtr4YI9OcJmReNVnEusFIA2Y1yR~CdJGfs2Q7~45yAaxY0Xn9JsWWkmYQGaJ12xcTL0muVWxqDSdd~cImkETnpVHBM8Dg472vn2iUrUD9~l172YCQzBmmOsDN2A-PPEPisB0EGrSe3nszf30CToJ-2RVm~ayV~nC8T8XxziA__",
     price:"₹ 70 Lac",
-    title:"2BHK flat in Vijayanagar, Mysuru",
+    title:"2BHK flat in Vijayanagar, Bengaluru",
     location:"2Nd Floor, Dejgow Building, Kannada Sahithya Parishath Rd, Mysuru - 570017",
     sqft:"2400Sqft",
     wash:"3 wash",
@@ -29,7 +29,7 @@ export const PopularData=[
       
         image:"https://s3-alpha-sig.figma.com/img/dc65/be1e/1125f6772ed4f467da95ee102e169fbe?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mtdeACLApMHED6RLNl96rNsGswSj4q5LgJCc74IdH11jprLb0G-YXwp-4pBJXODo~8y2KdKqKlMkBgPi416ZUa6ffX1xw6j-tAibOjE8r7d1m-yJwMrlVKTcIJAW3W1FL2D18oxIySdkiXr15kykADl-wedLuebprWirXLaCJkhsLcPtr4YI9OcJmReNVnEusFIA2Y1yR~CdJGfs2Q7~45yAaxY0Xn9JsWWkmYQGaJ12xcTL0muVWxqDSdd~cImkETnpVHBM8Dg472vn2iUrUD9~l172YCQzBmmOsDN2A-PPEPisB0EGrSe3nszf30CToJ-2RVm~ayV~nC8T8XxziA__",
        price:"₹ 70 Lac",
-       title:"2BHK flat in Vijayanagar, Mysuru",
+       title:"2BHK flat in Vijayanagar, Bengaluru",
        location:"2Nd Floor, Dejgow Building, Kannada Sahithya Parishath Rd, Mysuru - 570017",
        sqft:"2400Sqft",
        wash:"3 wash",
@@ -55,7 +55,7 @@ export const PopularData=[
       
         image:"https://s3-alpha-sig.figma.com/img/dc65/be1e/1125f6772ed4f467da95ee102e169fbe?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mtdeACLApMHED6RLNl96rNsGswSj4q5LgJCc74IdH11jprLb0G-YXwp-4pBJXODo~8y2KdKqKlMkBgPi416ZUa6ffX1xw6j-tAibOjE8r7d1m-yJwMrlVKTcIJAW3W1FL2D18oxIySdkiXr15kykADl-wedLuebprWirXLaCJkhsLcPtr4YI9OcJmReNVnEusFIA2Y1yR~CdJGfs2Q7~45yAaxY0Xn9JsWWkmYQGaJ12xcTL0muVWxqDSdd~cImkETnpVHBM8Dg472vn2iUrUD9~l172YCQzBmmOsDN2A-PPEPisB0EGrSe3nszf30CToJ-2RVm~ayV~nC8T8XxziA__",
        price:"₹ 70 Lac",
-       title:"3BHK flat in Vijayanagar, Mysuru",
+       title:"3BHK flat in Vijayanagar, Bengaluru",
        location:"2Nd Floor, Dejgow Building, Kannada Sahithya Parishath Rd, Mysuru - 570017",
        sqft:"2400Sqft",
        wash:"3 wash",
@@ -80,7 +80,7 @@ export const PopularData=[
       
         image:"https://s3-alpha-sig.figma.com/img/dc65/be1e/1125f6772ed4f467da95ee102e169fbe?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mtdeACLApMHED6RLNl96rNsGswSj4q5LgJCc74IdH11jprLb0G-YXwp-4pBJXODo~8y2KdKqKlMkBgPi416ZUa6ffX1xw6j-tAibOjE8r7d1m-yJwMrlVKTcIJAW3W1FL2D18oxIySdkiXr15kykADl-wedLuebprWirXLaCJkhsLcPtr4YI9OcJmReNVnEusFIA2Y1yR~CdJGfs2Q7~45yAaxY0Xn9JsWWkmYQGaJ12xcTL0muVWxqDSdd~cImkETnpVHBM8Dg472vn2iUrUD9~l172YCQzBmmOsDN2A-PPEPisB0EGrSe3nszf30CToJ-2RVm~ayV~nC8T8XxziA__",
        price:"₹ 70 Lac",
-       title:"3BHK flat in Vijayanagar, Mysuru",
+       title:"3BHK flat in Vijayanagar, Bengaluru",
        location:"2Nd Floor, Dejgow Building, Kannada Sahithya Parishath Rd, Mysuru - 570017",
        sqft:"2400Sqft",
        wash:"3 wash",

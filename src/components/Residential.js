@@ -49,23 +49,19 @@ const Residential = () => {
         <h6 className='card-title font fs-0'>{item.title}</h6>
         <p className='fw-lighter'>{item.location}</p>
         </div>
-          <div className='row fw-lighter'>
-            <div className='col d-flex ' >
-            <p className='me-3'>{item.sqft}</p>
-                  <p className='me-3'>{item.wash}</p>
-                  <p className='me-3'> {item.furnished}</p>
-                
+        <div className='row fw-lighter'>
+            <div className='col-12 d-flex mb-2'>
+              <p className='me-3'>{item.sqft}</p>
+              <p className='me-3'>{item.wash}</p>
+              <p className='me-3'>{item.furnished}</p>
             </div>
-            <p>  Listed On</p>
-            <div className='col d-flex ' >
-           
-            <p className='fw-normal me-5'>{item.listed}</p>
-            <div className='ms-5 '>
-            <button type="button" class="btn btn-primary  px-2 py-2">View Details</button>
+            <div className='col-12'>
+              <p className='mb-2'>Posted On</p>
             </div>
-            
+            <div className='col-12 d-flex justify-content-between align-items-center'>
+              <p className='fw-normal mb-0'>{item.listed}</p>
+              <button type="button" className="btn btn-primary mb-0 px-2">View Details</button>
             </div>
-
           </div>
         </div>
       </div>
@@ -90,31 +86,31 @@ const Residential = () => {
             </div>
             <div className='d-flex d-none d-md-inline ms-3'>
             <button
-              className='btn btn-success text-dark px-3 py-0 me-2'
+              className='btn bg-secondary-subtle text-dark px-3 py-0 me-2'
               onClick={() => setFilter('All')}
             >
               All
             </button>
             <button
-              className='btn btn-success text-dark px-3 py-0 me-2'
+              className='btn bg-secondary-subtle text-dark px-3 py-0 me-2'
               onClick={() => setFilter('2 BHK')}
             >
              + 2 BHK
             </button>
             <button
-              className='btn btn-success text-dark px-3 py-0 me-2'
+              className='btn bg-secondary-subtle text-dark px-3 py-0 me-2'
               onClick={() => setFilter('3 BHK')}
             >
              + 3 BHK
             </button>
             <button
-              className='btn btn-success text-dark px-3 py-0 me-2'
+              className='btn bg-secondary-subtle text-dark px-3 py-0 me-2'
               onClick={() => setFilter('4 BHK')}
             >
              + 4 BHK
             </button>
             <button
-              className='btn btn-success text-dark px-3 py-0 '
+              className='btn bg-secondary-subtle text-dark px-3 py-0 '
               onClick={() => setFilter('5 BHK')}
             >
              + 5 BHK
@@ -129,7 +125,18 @@ const Residential = () => {
           responsive={responsive}
           controlsStrategy="alternate"
           disableDotsControls={true}
-          
+          renderPrevButton={() => (
+          <button className="carousel-control-prev d-none d-lg-block" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon bg-primary rounded-2  " style={{marginRight:"9rem"}} aria-hidden="true"></span>
+             
+          </button>
+        )}
+        renderNextButton={() => (
+          <button className="carousel-control-next d-none d-lg-block" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span className="carousel-control-next-icon bg-primary rounded-2" style={{marginLeft:"10.5rem"}} aria-hidden="true"></span>
+           
+          </button>
+        )}
         />
       </div>
     </div>

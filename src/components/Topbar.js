@@ -1,9 +1,13 @@
 import React from 'react'
 
-const Topbar = () => {
+const Topbar = ({city,setCity}) => {
+
+  // const mysurudata= ()=>{
+
+  // }
   return (
     <div className="container-fluid fixed-top bg-light">
-      <nav className="navbar navbar-expand-lg custom-navbar ">
+      <nav className="navbar navbar-expand-lg custom-navbar ms-lg-4 ">
       <a className="navbar-brand brand d-block d-lg-none " href="#home">
           <img
             src="https://zameensquare.com/_next/static/media/zameen-mob-logo.74a5a37e.png"

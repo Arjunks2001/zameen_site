@@ -61,7 +61,18 @@ const Projects = () => {
           responsive={responsive}
           controlsStrategy="alternate"
           disableDotsControls={true}
-          className=""
+          renderPrevButton={() => (
+          <button className="carousel-control-prev d-none d-lg-block" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon bg-primary rounded-2  " style={{marginRight:"9rem"}} aria-hidden="true"></span>
+             
+          </button>
+        )}
+        renderNextButton={() => (
+          <button className="carousel-control-next d-none d-lg-block" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span className="carousel-control-next-icon bg-primary rounded-2 mb-2" style={{marginLeft:"9rem"}} aria-hidden="true"></span>
+           
+          </button>
+        )}
         />
       </div>
     </div>

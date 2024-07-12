@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { PopularData } from './Totaldata';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -21,9 +20,13 @@ const Popular = () => {
     );
     setLikedItems(newLikedItems);
 
-    // Update the data as needed, for example, send a request to the server.
+    
     console.log(newLikedItems.find(item => item.id === id));
   };
+
+  
+
+
 
   const filteredData = likedItems.filter(item => {
     if (filter === 'All') return true;
@@ -55,23 +58,19 @@ const Popular = () => {
         <p className='fw-lighter'>{item.location}</p>
         </div>
          
-          <div className='row fw-lighter'>
-            <div className='col d-flex ' >
-            <p className='me-3'>{item.sqft}</p>
-                  <p className='me-3'>{item.wash}</p>
-                  <p className='me-3'> {item.furnished}</p>
-                
+        <div className='row fw-lighter'>
+            <div className='col-12 d-flex mb-2'>
+              <p className='me-3'>{item.sqft}</p>
+              <p className='me-3'>{item.wash}</p>
+              <p className='me-3'>{item.furnished}</p>
             </div>
-            <p>  Listed On</p>
-            <div className='col d-flex' >
-            <p className='fw-normal me-5 mb-0'>{item.listed}</p>
-          
-            <div className='ms-5 '>
-            <p type="button" class="btn btn-primary mb-0 px-2  ">View Details</p>
+            <div className='col-12'>
+              <p className='mb-2'>Posted On</p>
             </div>
-            
+            <div className='col-12 d-flex justify-content-between align-items-center'>
+              <p className='fw-normal mb-0'>{item.listed}</p>
+              <button type="button" className="btn btn-primary mb-0 px-2">View Details</button>
             </div>
-
           </div>
         </div>
       </div>
@@ -97,19 +96,19 @@ const Popular = () => {
             </div>
             <div className='d-flex d-none d-md-inline ms-3'>
             <button
-              className='btn btn-success text-dark px-3 py-0 me-2'
-              onClick={() => setFilter('All')}
+              className='btn bg-secondary-subtle text-dark px-3 py-0 me-2'
+              onClick={() => setFilter('All') }
             >
               All
             </button>
             <button
-              className='btn btn-success text-dark px-3 py-0 me-2'
+              className='btn  bg-secondary-subtle text-dark px-3 py-0 me-2'
               onClick={() => setFilter('2 BHK')}
             >
               2 BHK
             </button>
             <button
-              className='btn btn-success text-dark px-3 py-0'
+              className='btn bg-secondary-subtle text-dark px-3 py-0'
               onClick={() => setFilter('3 BHK')}
             >
               3 BHK
@@ -130,12 +129,18 @@ const Popular = () => {
           controlsStrategy="alternate"
           disableDotsControls={true}
           showSlideInfo={true}
-          renderPrevButton={() => {
-            return <p className="p-4 absolute left-0 top-0"><FontAwesomeIcon icon={faCircleChevronRight} flip="horizontal" size="lg" /></p>
-          }}
-          renderNextButton={() => {
-            return <p className="p-4 absolute right-0 top-0"><FontAwesomeIcon icon={faCircleChevronRight} size="lg" /></p>
-          }}
+          renderPrevButton={() => (
+          <button className="carousel-control-prev d-none d-lg-block" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon bg-primary rounded-2  " style={{marginRight:"9rem"}} aria-hidden="true"></span>
+             
+          </button>
+        )}
+        renderNextButton={() => (
+          <button className="carousel-control-next d-none d-lg-block" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span className="carousel-control-next-icon bg-primary rounded-2" style={{marginLeft:"10.5rem"}} aria-hidden="true"></span>
+           
+          </button>
+        )}
          
         />
       </div>

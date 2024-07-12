@@ -22,7 +22,7 @@ const Agents = () => {
         </div>
         <div className='d-felx row'>
         <div className=" col-md-4 col-sm-6 col-lg-4 mt-4" >
-        <div className="card border" style={{width:"300px"}}>
+        <div className="card border agents" style={{width:"300px"}}>
           <img className=' image--cover' src='https://s3-alpha-sig.figma.com/img/3e23/7d30/065a7089938b45eecb5d4d9ab46f3daf?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BOaKszHib6CqtIBM-oblwK3zDqKrznRsqWU3n3NzUwkQmOgOMmtEOhVYVoB60vMcJ~Ho~LiFkLGCJm2BdV3OP8MMZpOsl3f93FZdIrItq86h3CrQW4w5JwAdEkER9FnMyz3W6lKiIc4ZPHlqer2IanBu336miCLl~vlSwrxhsGpsq3iNcIi4jI1zCJwlYFLi-j~LieWekUh3n5kuxfM-eAvSIOiJqHZ~ldrJWsC2BLPxz7rN4KuwKKJkrze7z9jkLWv5Av8MYdpF0pvsjXnRKClybevU1iZ2hI8Ak4fbtwbv-xgp5RJhLzG8h6dkMHiMRt9Q5vQRaHbxCze0YXvB7A__'
          ></img>
           <div className='card-body text-center'>
@@ -42,7 +42,7 @@ const Agents = () => {
         
        </div>
        <div className=" col-md-4 col-sm-6 col-lg-4 mt-4" >
-        <div className="card border" style={{width:"300px"}}>
+        <div className="card border agents" style={{width:"300px"}}>
           <img className=' image--cover' src='https://s3-alpha-sig.figma.com/img/3e23/7d30/065a7089938b45eecb5d4d9ab46f3daf?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BOaKszHib6CqtIBM-oblwK3zDqKrznRsqWU3n3NzUwkQmOgOMmtEOhVYVoB60vMcJ~Ho~LiFkLGCJm2BdV3OP8MMZpOsl3f93FZdIrItq86h3CrQW4w5JwAdEkER9FnMyz3W6lKiIc4ZPHlqer2IanBu336miCLl~vlSwrxhsGpsq3iNcIi4jI1zCJwlYFLi-j~LieWekUh3n5kuxfM-eAvSIOiJqHZ~ldrJWsC2BLPxz7rN4KuwKKJkrze7z9jkLWv5Av8MYdpF0pvsjXnRKClybevU1iZ2hI8Ak4fbtwbv-xgp5RJhLzG8h6dkMHiMRt9Q5vQRaHbxCze0YXvB7A__'
          ></img>
           <div className='card-body text-center'>
@@ -62,7 +62,7 @@ const Agents = () => {
         
        </div>
        <div className=" col-md-4 col-sm-6 col-lg-4 mt-4" >
-        <div className="card border" style={{width:"300px"}}>
+        <div className="card border agents" style={{width:"300px"}}>
           <img className=' image--cover' src='https://s3-alpha-sig.figma.com/img/3e23/7d30/065a7089938b45eecb5d4d9ab46f3daf?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BOaKszHib6CqtIBM-oblwK3zDqKrznRsqWU3n3NzUwkQmOgOMmtEOhVYVoB60vMcJ~Ho~LiFkLGCJm2BdV3OP8MMZpOsl3f93FZdIrItq86h3CrQW4w5JwAdEkER9FnMyz3W6lKiIc4ZPHlqer2IanBu336miCLl~vlSwrxhsGpsq3iNcIi4jI1zCJwlYFLi-j~LieWekUh3n5kuxfM-eAvSIOiJqHZ~ldrJWsC2BLPxz7rN4KuwKKJkrze7z9jkLWv5Av8MYdpF0pvsjXnRKClybevU1iZ2hI8Ak4fbtwbv-xgp5RJhLzG8h6dkMHiMRt9Q5vQRaHbxCze0YXvB7A__'
          ></img>
           <div className='card-body text-center'>
