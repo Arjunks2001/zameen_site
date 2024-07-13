@@ -71,8 +71,8 @@ const Residential = () => {
   ));
 
   const responsive = {
-    0: { items: 1 },
-    568: { items: 2 },
+    0: { items: 1},
+    568: { items: 2.1 },
     1024: { items: 3.2},
   };
 
@@ -86,31 +86,36 @@ const Residential = () => {
             </div>
             <div className='d-flex d-none d-md-inline ms-3'>
             <button
-              className='btn bg-secondary-subtle text-dark px-3 py-0 me-2'
+              className='btn   text-dark px-3 py-0 me-2'
+              style={{ backgroundColor: filter === 'All' ? '#50bf97' : '#edf4f9' }}
               onClick={() => setFilter('All')}
             >
               All
             </button>
             <button
-              className='btn bg-secondary-subtle text-dark px-3 py-0 me-2'
+              className='btn   text-dark px-3 py-0 me-2'
+              style={{ backgroundColor: filter === '2 BHK' ? '#50bf97' : '#edf4f9' }}
               onClick={() => setFilter('2 BHK')}
             >
              + 2 BHK
             </button>
             <button
-              className='btn bg-secondary-subtle text-dark px-3 py-0 me-2'
+              className='btn   text-dark px-3 py-0 me-2'
+              style={{ backgroundColor: filter === '3 BHK' ? '#50bf97' : '#edf4f9' }}
               onClick={() => setFilter('3 BHK')}
             >
              + 3 BHK
             </button>
             <button
-              className='btn bg-secondary-subtle text-dark px-3 py-0 me-2'
+              className='btn   text-dark px-3 py-0 me-2'
+              style={{ backgroundColor: filter === '4 BHK' ? '#50bf97' : '#edf4f9' }}
               onClick={() => setFilter('4 BHK')}
             >
              + 4 BHK
             </button>
             <button
-              className='btn bg-secondary-subtle text-dark px-3 py-0 '
+              className='btn   text-dark px-3 py-0 '
+              style={{ backgroundColor: filter === '5 BHK' ? '#50bf97' : '#edf4f9' }}
               onClick={() => setFilter('5 BHK')}
             >
              + 5 BHK

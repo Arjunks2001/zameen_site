@@ -73,7 +73,7 @@ const Plots = () => {
 
   const responsive = {
     0: { items: 1 },
-    568: { items: 2 },
+    568: { items: 2.1 },
     1024: { items: 3.2 },
   };
 
@@ -87,19 +87,22 @@ const Plots = () => {
             </div>
             <div className='d-flex d-none d-md-inline ms-3'>
             <button
-              className='btn bg-secondary-subtle text-dark px-3 py-0 me-2'
+              className='btn  text-dark px-3 py-0 me-2'
+              style={{ backgroundColor: filter === 'All' ? '#50bf97' : '#edf4f9' }}
               onClick={() => setFilter('All')}
             >
               All
             </button>
             <button
-              className='btn bg-secondary-subtle text-dark px-3 py-0 me-2'
+              className='btn   text-dark px-3 py-0 me-2'
+              style={{ backgroundColor: filter === '1200Sqft' ? '#50bf97' : '#edf4f9' }}
               onClick={() => setFilter('1200Sqft')}
             >
              1200 Sqft
             </button>
             <button
-              className='btn bg-secondary-subtle text-dark px-3 py-0'
+              className='btn   text-dark px-3 py-0'
+              style={{ backgroundColor: filter === '2400Sqft' ? '#50bf97' : '#edf4f9' }}
               onClick={() => setFilter('2400Sqft')}
             >
              2400 Sqft

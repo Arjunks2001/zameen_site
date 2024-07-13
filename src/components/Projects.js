@@ -12,7 +12,7 @@ const Projects = () => {
   const items = projectsdata.map((item) => (
     <div className='m-3'>
 <div className='item ' data-value={item.id} key={item.id}>
-      <div className='card object-fit-fill border rounded-4 h-50'style={{width:" "}}>
+      <div className='card object-fit-fill border rounded-4 h-50' >
         <img src={item.image} className='card-img-top rounded-4' alt={item.title} />
         
         <div className='card-body'>
@@ -35,7 +35,7 @@ const Projects = () => {
 
   const responsive = {
     0: { items: 1 },
-    568: { items: 2 },
+    568: { items: 2.1 },
     // 1024: { items: 3 },
   };
 

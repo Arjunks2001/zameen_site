@@ -23,22 +23,16 @@ const Popular = () => {
     
     console.log(newLikedItems.find(item => item.id === id));
   };
-
-  
-
-
-
   const filteredData = likedItems.filter(item => {
     if (filter === 'All') return true;
     if (filter === '2 BHK' && item.title.includes('2BHK')) return true;
     if (filter === '3 BHK' && item.title.includes('3BHK')) return true;
     return false;
   });
-
   const items = filteredData.map((item) => (
-    <div className='m-3'>
+    <div className='m-3 '>
 <div className='item ' data-value={item.id} key={item.id}>
-      <div className='card object-fit-fill border rounded-4 h-50'>
+      <div className='card object-fit-fill border  rounded-4 h-50'>
         <img src={item.image} className='card-img-top rounded-4' alt={item.title} />
         
         <div className='card-body'>
@@ -81,7 +75,7 @@ const Popular = () => {
 
   const responsive = {
     0: { items: 1 },
-    568: { items: 2 },
+    568: { items: 2.1 },
     1024: { items: 3.2 },
 
   };
@@ -96,19 +90,22 @@ const Popular = () => {
             </div>
             <div className='d-flex d-none d-md-inline ms-3'>
             <button
-              className='btn bg-secondary-subtle text-dark px-3 py-0 me-2'
+              className='btn   text-dark px-3 py-0 me-2'
+              style={{ backgroundColor: filter === 'All' ? '#50bf97' : '#edf4f9' }}
               onClick={() => setFilter('All') }
             >
               All
             </button>
             <button
-              className='btn  bg-secondary-subtle text-dark px-3 py-0 me-2'
+              className='btn   text-dark px-3 py-0 me-2'
+              style={{ backgroundColor: filter === '2 BHK' ? '#50bf97' : '#edf4f9' }}
               onClick={() => setFilter('2 BHK')}
             >
               2 BHK
             </button>
             <button
-              className='btn bg-secondary-subtle text-dark px-3 py-0'
+              className='btn   text-dark px-3 py-0'
+              style={{ backgroundColor: filter === '3 BHK' ? '#50bf97' : '#edf4f9' }}
               onClick={() => setFilter('3 BHK')}
             >
               3 BHK

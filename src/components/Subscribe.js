@@ -10,7 +10,7 @@ const Subscribe = () => {
    <img class = "card-img-top rounded-5" src = "https://zameensquare.com/_next/static/media/subscribe.b5ba2647.png" alt = ""/>
   
    <div class = "card-img-overlay mt-lg-5 ">
-    <div className='col-lg-8 text-white mt-lg-5 ms-lg-5'  >
+    <div className='col-lg-8 text-white mt-lg-5 ms-lg-5'>
     <h3>Please Subscribe</h3>
     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
     sed diam nonumy eirmod tempor invidunt ut labore.</p>
