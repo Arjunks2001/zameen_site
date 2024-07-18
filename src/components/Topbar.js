@@ -6,7 +6,7 @@ const Topbar = ({city,setCity}) => {
 
   // }
   return (
-    <div className="container-fluid fixed-top bg-light">
+    <div className="container-fluid bg-light">
       <nav className="navbar navbar-expand-lg custom-navbar ms-lg-4 ">
       <a className="navbar-brand brand d-block d-lg-none " href="#home">
           <img

@@ -1,35 +1,46 @@
 
 import './App.css';
-import Subscribe from './components/Subscribe';
-import Popular from './components/Popular';
-import Agents from './components/Agents';
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// import { Route, Router, Routes } from 'react-router-dom';
+import Front_page from './components/Home_page/Front_page';
 import Topbar from './components/Topbar';
-import Home from './components/Home';
 import Footer from './components/Footer';
-import Plots from './components/Plots';
-import Office from './components/Office';
-import Residential from './components/Residential';
-import Commercial from './components/Commercial';
-import Projects from './components/Projects';
+import Popular_Details from './components/View_Details/Popular_Details';
+ 
 
 
 
 function App() {
 
   return (
-   <div>
-    <Topbar />
-    <Home/>
-    <Popular/>
-    <Projects/>
-    <Plots/>
-   <Residential/>
-    <Office/>
-    <Commercial/>
-    <Agents/>
-      <Subscribe/>
-      <Footer/>
-   </div>
+    <>
+    <Topbar/>
+ <Router>
+    <Routes>
+    
+      <Route exact path="/" element={<Front_page/>} />
+      <Route exact path="/Popular_Details" element={<Popular_Details/>} />
+      
+
+    </Routes>
+   </Router> 
+   <Footer/>
+    </>
+   
+  
+     
+     
+   
   );
 }
 
